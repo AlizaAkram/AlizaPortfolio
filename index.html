@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aliza Akram Portfolio</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Link to external styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Animation Script -->
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans leading-relaxed">
+
+  <!-- HOME Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center bg-indigo-50 text-center px-6 fade-in">
+    <img src="images/aliza.jpeg" alt="Aliza Akram" class="w-40 h-40 rounded-full shadow-md mb-6" />
+    <h1 class="text-4xl font-bold mb-2">Aliza Akram</h1>
+    <p class="text-lg text-gray-600">Final-year CS Student</p>
+    <p class="text-lg text-gray-600">Aspiring Frontend Developer | Programmer</p>
+    <p class="text-md text-gray-700 mt-4 max-w-xl">
+      Crafting websites with clean code and creative logic.
+    </p>
+    <a href="#projects" class="mt-6 inline-block px-6 py-2 bg-indigo-600 text-white rounded-full shadow hover:bg-indigo-700 transition">
+      View my Projects
+    </a>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="py-16 px-6 bg-white fade-in" id="about">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-700">
+        I'm Aliza Akram, a 4th-year Computer Science student and aspiring frontend developer. I enjoy exploring frontend frameworks, solving problems, and learning new technologies. I work on open-source projects and build responsive websites with clean, efficient code.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills & Projects Section -->
+  <section class="py-16 px-6 bg-indigo-50 fade-in" id="skills-projects">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-12 text-gray-800">
+        <span class="bg-white p-3 rounded shadow">HTML / CSS / JavaScript</span>
+        <span class="bg-white p-3 rounded shadow">SQL Database</span>
+        <span class="bg-white p-3 rounded shadow">Python</span>
+        <span class="bg-white p-3 rounded shadow">C / C++</span>
+        <span class="bg-white p-3 rounded shadow">Responsive Design</span>
+      </div>
+
+      <h2 class="text-3xl font-bold mb-4" id="projects">Projects</h2>
+      <ul class="text-left list-disc list-inside text-gray-700 mb-12 max-w-xl mx-auto">
+        <li>Tic Tac Toe Game</li>
+        <li>Online Shopping Website</li>
+        <li>Application Tracking System</li>
+        <li>Personal Portfolio</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mb-4">Interests</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 text-gray-800 max-w-xl mx-auto">
+        <span class="bg-white p-3 rounded shadow">Frontend Development</span>
+        <span class="bg-white p-3 rounded shadow">Open-source contributions</span>
+        <span class="bg-white p-3 rounded shadow">SQL & Database Systems</span>
+        <span class="bg-white p-3 rounded shadow">Writing and Documentation</span>
+      </div>
+    </div>
+  </section>
+
+  <!--  Contact Section -->
+  <section class="py-16 px-6 bg-white fade-in" id="contact">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <div class="text-gray-700 space-y-2">
+        <p>📍 <strong>Location:</strong> Lahore, Pakistan</p>
+        <p>📞 <strong>Phone:</strong> 0304-4958817</p>
+        <p>📧 <strong>Email:</strong> bcsf22m516@pucit.edu.pk</p>
+        <p>🔗 <strong>GitHub:</strong> <a href="https://github.com/dashboard" class="text-indigo-600 underline">GitHub link</a></p>
+        <p>🔗 <strong>LinkedIn:</strong> <a href="#" class="text-indigo-600 underline">LinkedIn link</a></p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
