@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<!-- AOS Script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aliza Akram Portfolio</title>
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Link to external styles -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Animation Script -->
-  <script defer src="script.js"></script>
 </head>
 <body class="bg-white text-gray-800 font-sans leading-relaxed">
 
-  <!-- HOME Section -->
-  <section class="min-h-screen flex flex-col items-center justify-center bg-indigo-50 text-center px-6 fade-in">
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-black-600">Aliza's Personal Portfolio</h1>
+      <nav class="space-x-4 text-sm sm:text-base">
+        <a href="#about" class="text-gray-700 hover:text-indigo-600 transition">About</a>
+        <a href="#skills-projects" class="text-gray-700 hover:text-indigo-600 transition">Skills</a>
+        <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="min-h-screen flex flex-col items-center justify-center bg-indigo-50 text-center px-6 fade-in pt-24">
     <img src="images/aliza.jpeg" alt="Aliza Akram" class="w-40 h-40 rounded-full shadow-md mb-6" />
     <h1 class="text-4xl font-bold mb-2">Aliza Akram</h1>
     <p class="text-lg text-gray-600">Final-year CS Student</p>
@@ -39,59 +36,60 @@
     </a>
   </section>
 
-  <!-- About Me Section -->
   <section class="py-16 px-6 bg-white fade-in" id="about">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">About Me</h2>
-      <p class="text-gray-700">
+      <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">About Me</h2>
+      <p class="text-gray-700" data-aos="fade-in">
         I'm Aliza Akram, a 4th-year Computer Science student and aspiring frontend developer. I enjoy exploring frontend frameworks, solving problems, and learning new technologies. I work on open-source projects and build responsive websites with clean, efficient code.
       </p>
     </div>
   </section>
 
-  <!-- Skills & Projects Section -->
   <section class="py-16 px-6 bg-indigo-50 fade-in" id="skills-projects">
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Skills</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-12 text-gray-800">
-        <span class="bg-white p-3 rounded shadow">HTML / CSS / JavaScript</span>
-        <span class="bg-white p-3 rounded shadow">SQL Database</span>
-        <span class="bg-white p-3 rounded shadow">Python</span>
-        <span class="bg-white p-3 rounded shadow">C / C++</span>
-        <span class="bg-white p-3 rounded shadow">Responsive Design</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-yellow-100 transition duration-300" data-aos="zoom-in">HTML / CSS / JavaScript</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-yellow-100 transition duration-300" data-aos="zoom-in" data-aos-delay="100">SQL Database</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-yellow-100 transition duration-300" data-aos="zoom-in" data-aos-delay="200">Python</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-yellow-100 transition duration-300" data-aos="zoom-in" data-aos-delay="300">C / C++</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-yellow-100 transition duration-300" data-aos="zoom-in" data-aos-delay="400">Responsive Design</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-yellow-100 transition duration-300" data-aos="zoom-in" data-aos-delay="500">Java</span>
       </div>
 
-      <h2 class="text-3xl font-bold mb-4" id="projects">Projects</h2>
-      <ul class="text-left list-disc list-inside text-gray-700 mb-12 max-w-xl mx-auto">
-        <li>Tic Tac Toe Game</li>
-        <li>Online Shopping Website</li>
-        <li>Application Tracking System</li>
-        <li>Personal Portfolio</li>
+      <h2 class="text-3xl font-bold mb-4" id="projects" data-aos="fade-up">Projects</h2>
+      <ul class="text-left list-disc list-inside text-gray-700 mb-12 max-w-xl mx-auto space-y-2">
+        <li class="bg-white p-3 rounded shadow hover:text-indigo-600 hover:translate-x-2 transition duration-300" data-aos="fade-left">Tic Tac Toe Game</li>
+        <li class="bg-white p-3 rounded shadow hover:text-indigo-600 hover:translate-x-2 transition duration-300" data-aos="fade-left" data-aos-delay="100">Online Shopping Website</li>
+        <li class="bg-white p-3 rounded shadow hover:text-indigo-600 hover:translate-x-2 transition duration-300" data-aos="fade-left" data-aos-delay="200">Application Tracking System</li>
+        <li class="bg-white p-3 rounded shadow hover:text-indigo-600 hover:translate-x-2 transition duration-300" data-aos="fade-left" data-aos-delay="300">Personal Portfolio</li>
       </ul>
 
-      <h2 class="text-3xl font-bold mb-4">Interests</h2>
+      <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Interests</h2>
       <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 text-gray-800 max-w-xl mx-auto">
-        <span class="bg-white p-3 rounded shadow">Frontend Development</span>
-        <span class="bg-white p-3 rounded shadow">Open-source contributions</span>
-        <span class="bg-white p-3 rounded shadow">SQL & Database Systems</span>
-        <span class="bg-white p-3 rounded shadow">Writing and Documentation</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-green-100 transition duration-300" data-aos="flip-left">Frontend Development</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-green-100 transition duration-300" data-aos="flip-left" data-aos-delay="100">Open-source contributions</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-green-100 transition duration-300" data-aos="flip-left" data-aos-delay="200">SQL & Database Systems</span>
+        <span class="bg-white p-3 rounded shadow hover:scale-105 hover:bg-green-100 transition duration-300" data-aos="flip-left" data-aos-delay="300">Writing and Documentation</span>
       </div>
     </div>
   </section>
 
-  <!--  Contact Section -->
   <section class="py-16 px-6 bg-white fade-in" id="contact">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-      <div class="text-gray-700 space-y-2">
+      <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Contact Me</h2>
+      <div class="text-gray-700 space-y-2" data-aos="fade-in">
         <p>📍 <strong>Location:</strong> Lahore, Pakistan</p>
         <p>📞 <strong>Phone:</strong> 0304-4958817</p>
         <p>📧 <strong>Email:</strong> bcsf22m516@pucit.edu.pk</p>
-        <p>🔗 <strong>GitHub:</strong> <a href="https://github.com/dashboard" class="text-indigo-600 underline">GitHub link</a></p>
-        <p>🔗 <strong>LinkedIn:</strong> <a href="#" class="text-indigo-600 underline">LinkedIn link</a></p>
+        <p>🔗 <strong>GitHub:</strong> <a href="https://github.com/dashboard" class="text-indigo-600 underline hover:text-indigo-800">GitHub</a></p>
+        <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aliza-akram-a24374370/" class="text-indigo-600 underline hover:text-indigo-800">LinkedIn</a></p>
       </div>
     </div>
   </section>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script src="script.js"></script>
 </body>
 </html>
