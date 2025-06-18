@@ -1,9 +1,27 @@
+
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.6s ease-out;
 }
+
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+.skill-box,
+.project-item,
+.interest-box {
+  @apply bg-white p-3 rounded shadow transition transform duration-300;
+}
+
+.skill-box:hover,
+.interest-box:hover {
+  @apply scale-105 bg-yellow-100 shadow-lg;
+}
+
+.project-item:hover {
+  @apply translate-x-2 text-indigo-600;
 }
